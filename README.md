@@ -1,5 +1,5 @@
 # Nicepad
-The Nicepad is a complete remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
+The Nicepad is a remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
 The main goal for the Nicepad is having a complete, open-source, hand-wired macropad that everyone can make and customize as they wish.
 
 <img src="https://github.com/user-attachments/assets/ceef3b90-f3c2-455b-a835-7047c871d377" width=50% height=50%>
