@@ -1,7 +1,8 @@
 # Nicepad
 The Nicepad is a complete remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
 The main goal for the Nicepad is having a complete, open-source, hand-wired macropad that everyone can make and customize as they wish.
-![Front Pic regular+XL](https://github.com/user-attachments/assets/ceef3b90-f3c2-455b-a835-7047c871d377)
+
+<img src="https://github.com/user-attachments/assets/ceef3b90-f3c2-455b-a835-7047c871d377" width=50% height=50%>
 
 # BOM
 | Component                     | Quantity     | Links                 |
@@ -12,7 +13,7 @@ The main goal for the Nicepad is having a complete, open-source, hand-wired macr
 | 1.2 mm bare copper wire         | as needed    |[Aliexpress](https://www.aliexpress.com/item/1005006608203341.html)                        |
 |Wires            | as needed   |[Aliexpress](https://www.aliexpress.com/item/32742543692.html)                        |
 | Soldering iron & accessories  |         |    I can recommend the [Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/) |
-| M2 heat-set inserts           | 7–10         |[Aliexpress](https://www.aliexpress.com/item/1005006472781064.html)                        |
+| M2 heat-set inserts           | 4 for the XL, 7 for the regular |[Aliexpress](https://www.aliexpress.com/item/1005006472781064.html)      |
 | M2 socket-head screws         | 1 3mm, 4 5mm, 4 6mm         |[Aliexpress](https://www.aliexpress.com/item/33022099174.html)                        |
 | 8x2mm Rubber Feet| 4| [Aliexpress](https://www.aliexpress.com/item/1005007040878644.html)|
 
@@ -29,10 +30,13 @@ We first want to check that everything fits - try to place the OLED in the slot 
 Place the switches in the plate, making sure to use the correct size (the inserts for the screws should be the top).
 Then, wire the switches. I opted for direct wiring, as they are simpler than a matrix and I figured that a matrix will result in more work overall.
 
+## Heatset inserts
+I opted for different type of mounting between the regular and the XL. The XL require less because I wanted to try that out (it is like that in the original Printed Pad)
 
 ## Wiring
 I like to wire the ground together for all the switches and then direct wire to the Pi zero as follows:
-![Wiring 1](https://github.com/user-attachments/assets/56a629cb-2872-45df-931f-6db20372db52) {width=200px }
+
+<img src="https://github.com/user-attachments/assets/56a629cb-2872-45df-931f-6db20372db52" width=50% height=50%>
 
 Then simply wire to the pico according to this table:
 | Component   | Pi PIN |
@@ -55,13 +59,16 @@ For the Regular version:
 
 
 After you finish wiring it should look something like this:
-![Wiring 2](https://github.com/user-attachments/assets/97c3851c-45b3-4c85-8bdb-a2c4a3cf8655)
+
+<img src="https://github.com/user-attachments/assets/97c3851c-45b3-4c85-8bdb-a2c4a3cf8655" width=50% height=50%>
 
 Here, plug it in the computer and upload the firmware (uf2 file). Check that vial.rocks work and check every switch. See that the oled is working properly.
 
 ## Final assembly
 Screw in the plate to the top panel:
-![Wiring Complete](https://github.com/user-attachments/assets/9b7bbf84-2a35-452d-af02-0f16ac675dcd)
+
+<img src="https://github.com/user-attachments/assets/9b7bbf84-2a35-452d-af02-0f16ac675dcd" width=50% height=50%>
+
 I recommend hot-gluing the OLED in place, making sure there is no visible gap from the front.
 
 Place the Pico Zero into the slot in the bottom and secure with a 3x2mm screw.
