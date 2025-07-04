@@ -1,18 +1,23 @@
 # Nicepad
-The Nicepad is a remix of the Printedpad, which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
+The Nicepad is a complete remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
+The main goal for the Nicepad is having a complete, open-source, hand-wired macropad that everyone can make and customize as they wish.
 ![Front Pic regular+XL](https://github.com/user-attachments/assets/ceef3b90-f3c2-455b-a835-7047c871d377)
 
 # BOM
-To make the macropad you need:
-7\10 MX-style switches
-Raspberry Pi Zero
-Mono OLED 0.96 inch
-Wires and soldering equipment (I recommend 1mm bare copper wires and 30awg wires)
-M2 Heatset inserts
-M2 socket head screw
+| Component                     | Quantity     | Links                 |
+|-------------------------------|-------------:|-----------------------|
+| MX-style switches             | 7–10         |     [Aliexpress](https://www.aliexpress.com/item/1005006425450443.html)                  |
+| Raspberry Pi Pico Zero             | 1            |[Aliexpress](http://aliexpress.com/item/1005007393402333.html)                        |
+| Mono OLED 0.96″ I²C display   | 1            |[Aliexpress](https://www.aliexpress.com/item/1005006117094887.html)                        |
+| 1.2 mm bare copper wire         | as needed    |[Aliexpress](https://www.aliexpress.com/item/1005006608203341.html)                        |
+|Wires            | as needed   |[Aliexpress](https://www.aliexpress.com/item/32742543692.html)                        |
+| Soldering iron & accessories  |         |    I can recommend the [Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/) |
+| M2 heat-set inserts           | 7–10         |[Aliexpress](https://www.aliexpress.com/item/1005006472781064.html)                        |
+| M2 socket-head screws         | 1 3mm, 4 5mm, 4 6mm         |[Aliexpress](https://www.aliexpress.com/item/33022099174.html)                        |
+| 8x2mm Rubber Feet| 4| [Aliexpress](https://www.aliexpress.com/item/1005007040878644.html)|
 
 # Printing
-The Nicepad is made to be easily printed with any Bambulab printers (makerworld link). Make sure to use supports only on the bed!
+The Nicepad is made to be easily printed with any Bambulab printers (makerworld link TBD). Make sure to use supports only on the bed!
 
 I recommend these [keycaps](https://makerworld.com/en/models/132469-xda-style-keycaps-blank?from=search#profileId-143606) as they are cute but any other mx style keycap should work.
 
@@ -27,10 +32,27 @@ Then, wire the switches. I opted for direct wiring, as they are simpler than a m
 
 ## Wiring
 I like to wire the ground together for all the switches and then direct wire to the Pi zero as follows:
-![Wiring 1](https://github.com/user-attachments/assets/56a629cb-2872-45df-931f-6db20372db52)
+![Wiring 1](https://github.com/user-attachments/assets/56a629cb-2872-45df-931f-6db20372db52) {width=200px }
 
 Then simply wire to the pico according to this table:
-Component| Pi PIN
+| Component   | Pi PIN |
+| ----------- | ------------ | 
+| OLED GND       |    GND      |
+| OLED VCC       |       3.3V   |
+| OLED SC|GP3|
+| OLED SDA|GP2|
+| Switch 1 to 9 |  GP7 to GP15 |
+| Switch 10       |     GP26     |
+
+For the Regular version:
+| Component   | Pi PIN |
+| ----------- | ------------ | 
+| OLED GND       |    GND      |
+| OLED VCC       |       3.3V   |
+| OLED SC        |GP3|
+| OLED SDA       |GP2|
+| Switch 1 to 7     |  GP8 to GP14 |
+
 
 After you finish wiring it should look something like this:
 ![Wiring 2](https://github.com/user-attachments/assets/97c3851c-45b3-4c85-8bdb-a2c4a3cf8655)
