@@ -1,0 +1,40 @@
+{
+    "manufacturer": "Biddai",
+    "keyboard_name": "Nicepad",
+    "maintainer": "Biddai",
+    "development_board": "promicro_rp2040",
+    "features": {
+        "bootmagic": true,
+        "command": true,
+        "console": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "direct": [
+                    ["GP8", "NO_PIN", "NO_PIN"],
+                    ["GP9", "GP11", "GP13"],
+                    ["GP10", "GP12", "GP14"]
+                ]
+    },
+    "url": "TBD",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0x5049"
+    },
+    "layouts": {
+        "LAYOUT_default_2x3": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2}
+            ]
+        }
+    }
+}
