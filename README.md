@@ -1,8 +1,11 @@
-# Nicepad
-The Nicepad is a remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
-The main goal for the Nicepad is having a complete, open-source, hand-wired macropad that everyone can make and customize as they wish.
+# Nice!pad
+The Nice!pad is a remix of the [Printed Pad](https://protadesigns.com/products/printed-pad), which is a macropad that specializes in layering. There are 2 versions - a regular 6-keys and an XL with 9 keys.
+The main goal for the Nice!Pad is having a complete, open-source, hand-wired macropad that everyone can make and customize as they wish.
 
-<img src="https://github.com/user-attachments/assets/ceef3b90-f3c2-455b-a835-7047c871d377" width=50%>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/1a5d718f-e3e2-4ebd-b588-90567fb0e5af" width=50%>
+</p>
+
 
 # BOM
 | Component                     | Quantity     | Links                 |
@@ -18,7 +21,7 @@ The main goal for the Nicepad is having a complete, open-source, hand-wired macr
 | 8x2mm Rubber Feet| 4| [Aliexpress](https://www.aliexpress.com/item/1005007040878644.html)|
 
 # Printing
-The Nicepad is made to be easily printed with any Bambulab printers (makerworld link TBD). Make sure to use supports only on the bed!
+The Nice!Pad is made to be easily printed with any Bambulab printers (makerworld link TBD). Make sure to use supports only on the bed!
 
 I recommend these [keycaps](https://makerworld.com/en/models/132469-xda-style-keycaps-blank?from=search#profileId-143606) as they are cute but any other mx style keycap should work.
 
@@ -31,7 +34,8 @@ Place the switches in the plate, making sure to use the correct size (the insert
 Then, wire the switches. I opted for direct wiring, as they are simpler than a matrix and I figured that a matrix will result in more work overall.
 
 ## Heatset inserts
-I opted for different type of mounting between the regular and the XL. The XL require less because I wanted to try that out (it is like that in the original Printed Pad)
+I opted for different type of mounting between the regular and the XL. The XL require less because I wanted to try that out (it is like that in the original Printed Pad).
+If you rather not use heatset inserts, the model can be easily modified to accomodate that. I just like the feel of them.
 
 ## Wiring
 I like to wire the ground together for all the switches and then direct wire to the Pi zero as follows:
@@ -39,7 +43,7 @@ I like to wire the ground together for all the switches and then direct wire to 
 <img src="https://github.com/user-attachments/assets/56a629cb-2872-45df-931f-6db20372db52" width=50% height=50%>
 
 Then simply wire to the pico according to this table:
-| Component   | Pi PIN |
+| Component   |PIN |
 | ----------- | ------------ | 
 | OLED GND       |    GND      |
 | OLED VCC       |       3.3V   |
@@ -49,14 +53,15 @@ Then simply wire to the pico according to this table:
 | Switch 10       |     GP26     |
 
 For the Regular version:
-| Component   | Pi PIN |
+| Component   | PIN |
 | ----------- | ------------ | 
 | OLED GND       |    GND      |
 | OLED VCC       |       3.3V   |
 | OLED SC        |GP3|
 | OLED SDA       |GP2|
-| Switch 1 to 7     |  GP8 to GP14 |
+| Switch 1 to 7*    |  GP8 to GP14 |
 
+*(Numbers 1,2,3,5,6,8,9 in the diagram, in that order)
 
 After you finish wiring it should look something like this:
 
@@ -71,10 +76,10 @@ Screw in the plate to the top panel:
 
 I recommend hot-gluing the OLED in place, making sure there is no visible gap from the front.
 
-Place the Pico Zero into the slot in the bottom and secure with a 3x2mm screw.
+Place the Pico Zero into the slot in the bottom and secure with a 3x2mm screw (if too loose, you can hot-glue it).
 Now snap fit the top and bottom assembly and secure with 4 6x2mm screws.
 Plug it in and check everything. You are ready to rock!
 
 ### Macros
-I will not include a tutorial for vial.rocks. It is its own thing. I do recommend checking some AutoHotKey scripts, I used 
+I will not include a tutorial for vial.rocks. It is its own thing. I do recommend checking some AutoHotKey scripts, I made one here.
 
