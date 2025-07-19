@@ -81,5 +81,5 @@ Now snap fit the top and bottom assembly and secure with 4 6x2mm screws.
 Plug it in and check everything. You are ready to rock!
 
 ### Macros
-I will not include a tutorial for vial.rocks. It is its own thing. I do recommend checking some AutoHotKey scripts, I made one here.
+I will not include a tutorial for vial.rocks. It is its own thing. I do recommend checking some AutoHotKey scripts, I made one [here](https://github.com/Biddai/AutoHotkey).
 
