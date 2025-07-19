@@ -21,9 +21,9 @@ The main goal for the Nice!Pad is having a complete, open-source, hand-wired mac
 | 8x2mm Rubber Feet| 4| [Aliexpress](https://www.aliexpress.com/item/1005007040878644.html)|
 
 # Printing
-The Nice!Pad is made to be easily printed with any Bambulab printers (makerworld link TBD). Make sure to use supports only on the bed!
+The Nice!Pad is made to be easily printed with any BambuLab printers ([MakerWorld](https://makerworld.com/en/models/1619528-the-nice-pad-a-programmable-macropad#profileId-1709367)). Make sure to use supports only on the bed!
 
-I recommend these [keycaps](https://makerworld.com/en/models/132469-xda-style-keycaps-blank?from=search#profileId-143606) as they are cute but any other mx style keycap should work.
+I recommend these [keycaps](https://makerworld.com/en/models/132469-xda-style-keycaps-blank?from=search#profileId-143606) as they are cute but any other mx style keycap should work. I printed those with a 0.2mm nozzle for best compatibility.
 
 # Assembly
 
